@@ -4,7 +4,6 @@ This project demonstrates **image classification** using a **Convolutional Neura
 
 ## **Table of Contents**
 - [Dataset](#dataset)
-- [Project Structure](#project-structure)
 - [Features](#features)
 - [Training the Model](#training-the-model)
 - [Results](#results)
@@ -22,14 +21,16 @@ The project uses the **Intel Image Classification Dataset**. This dataset contai
 6. Streets
 
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) and place it in the following structure:
-datasets/ │ └── intel_image_data/ └── seg_train/ └── seg_train/ ├── buildings/ ├── forest/ ├── glacier/ ├── mountain/ ├── sea/ └── street/
-
-
----
-
-## **Project Structure**
-. ├── datasets/ # Folder containing the dataset ├── cnn_model.pth # Saved trained model (after training) ├── main.py # Main script for training and evaluation ├── requirements.txt # Python dependencies └── README.md # Project documentation
-
+datasets/
+└── intel_image_data/
+    └── seg_train/
+        └── seg_train/
+            ├── buildings/
+            ├── forest/
+            ├── glacier/
+            ├── mountain/
+            ├── sea/
+            └── street/
 
 ---
 
@@ -44,9 +45,21 @@ datasets/ │ └── intel_image_data/ └── seg_train/ └── seg_tra
 ## Training the Model
 Here’s how the CNN model is trained:
 
-Loss Function: CrossEntropyLoss is used for multi-class classification.
-Optimizer: Adam optimizer with a learning rate of 0.001.
-Epochs: Default training for 10 epochs (can be adjusted).
-Batch Size: 32 images per batch.
+-  Loss Function: CrossEntropyLoss is used for multi-class classification.
+-  Optimizer: Adam optimizer with a learning rate of 0.001.
+-  Epochs: Default training for 10 epochs (can be adjusted).
+-  Batch Size: 32 images per batch.
+
+---
+
+## Results
+Validation Accuracy: ~75.67% (after training for 10 epochs).
+
+---
+
+## References
+PyTorch Documentation
+Intel Image Classification Dataset on Kaggle
+Python TQDM – For displaying training progress bars.
 
 
