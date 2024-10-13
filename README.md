@@ -6,8 +6,6 @@ This project demonstrates **image classification** using a **Convolutional Neura
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Training the Model](#training-the-model)
 - [Results](#results)
 - [References](#references)
@@ -31,4 +29,24 @@ datasets/ │ └── intel_image_data/ └── seg_train/ └── seg_tra
 
 ## **Project Structure**
 . ├── datasets/ # Folder containing the dataset ├── cnn_model.pth # Saved trained model (after training) ├── main.py # Main script for training and evaluation ├── requirements.txt # Python dependencies └── README.md # Project documentation
+
+
+---
+
+## **Features**
+- **Data Augmentation**: Random rotations, horizontal flips, and color jittering to enhance training.
+- **CNN Model**: A simple Convolutional Neural Network built with PyTorch.
+- **Training and Validation**: PyTorch’s DataLoader is used to manage batches.
+- **Model Saving**: Trained model is saved as `cnn_model.pth`.
+
+---
+
+## Training the Model
+Here’s how the CNN model is trained:
+
+Loss Function: CrossEntropyLoss is used for multi-class classification.
+Optimizer: Adam optimizer with a learning rate of 0.001.
+Epochs: Default training for 10 epochs (can be adjusted).
+Batch Size: 32 images per batch.
+
 
