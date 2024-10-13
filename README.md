@@ -21,16 +21,17 @@ The project uses the **Intel Image Classification Dataset**. This dataset contai
 6. Streets
 
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) and place it in the following structure:
-datasets/
-└── intel_image_data/
-    └── seg_train/
-        └── seg_train/
-            ├── buildings/
-            ├── forest/
-            ├── glacier/
-            ├── mountain/
-            ├── sea/
-            └── street/
+```plaintext
+        datasets/
+        └── intel_image_data/
+            └── seg_train/
+                └── seg_train/
+                    ├── buildings/
+                    ├── forest/
+                    ├── glacier/
+                    ├── mountain/
+                    ├── sea/
+                    └── street/
 
 ---
 
@@ -58,8 +59,8 @@ Validation Accuracy: ~75.67% (after training for 10 epochs).
 ---
 
 ## References
-PyTorch Documentation
-Intel Image Classification Dataset on Kaggle
-Python TQDM – For displaying training progress bars.
+- PyTorch Documentation
+- Intel Image Classification Dataset on Kaggle
+- Python TQDM – For displaying training progress bars.
 
 
